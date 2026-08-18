@@ -33,17 +33,14 @@ encontrada com o cadastro público de CNPJ da Receita Federal, pontua o encaixe 
 IA e devolve uma lista com telefone, e-mail e score.
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"primaryColor":"#101820","primaryTextColor":"#E7E3D8","primaryBorderColor":"#C6A15B","lineColor":"#C6A15B","secondaryColor":"#101820","tertiaryColor":"#101820","fontFamily":"Segoe UI, Inter, Helvetica, Arial, sans-serif","fontSize":"14px"}} }%%
+%%{init:{"theme":"base","themeVariables":{"primaryColor":"#101820","primaryTextColor":"#E7E3D8","primaryBorderColor":"#C6A15B","lineColor":"#C6A15B","secondaryColor":"#101820","tertiaryColor":"#101820"}}}%%
 flowchart TD
-  A["nicho + cidade"] --> B["OpenStreetMap / Overpass<br/>empresas reais, com endereco e contato"]
-  B --> C["Cadastro de CNPJ da Receita Federal<br/>razao social, CNAE, porte, situacao"]
-  C --> D["Enriquecimento sob demanda<br/>Apify"]
-  D --> E["Pontuacao de encaixe<br/>Claude, GPT ou Gemini"]
-  E --> F(["lista em review"])
-  F --> G["selecao manual mais confirmacao"]
-  G --> H["envio pelo Gmail do proprio cliente"]
-  style F fill:#C6A15B,stroke:#C6A15B,color:#101820
-  style H stroke:#4F5D4E
+  A["nicho + cidade"] --> B["descoberta e cruzamento<br>OpenStreetMap, cadastro de CNPJ da Receita, Apify"]
+  B --> C["pontuação de encaixe<br>Claude, GPT ou Gemini"]
+  C --> D(["lista em review"])
+  D --> E["seleção manual mais confirmação"]
+  E --> F["envio pelo Gmail do próprio cliente"]
+  style D fill:#C6A15B,stroke:#C6A15B,color:#101820
 ```
 
 <p align="center"><sub>A cadeia para em <code>review</code>. Nada passa daí sem alguém clicar.</sub></p>
