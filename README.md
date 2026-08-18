@@ -41,21 +41,9 @@ Você digita o nicho e a cidade. O Argos varre o OpenStreetMap, cruza cada empre
 encontrada com o cadastro público de CNPJ da Receita Federal, pontua o encaixe com
 IA e devolve uma lista com telefone, e-mail e score.
 
-```mermaid
-flowchart TD
-  A["nicho + cidade"] --> B["descoberta e cruzamento<br>OpenStreetMap, cadastro de CNPJ da Receita, Apify"]
-  B --> C["pontuação de encaixe<br>Claude, GPT ou Gemini"]
-  C --> D(["lista em review"])
-  D --> E["seleção manual mais confirmação"]
-  E --> F["envio pelo Gmail do próprio cliente"]
-  classDef etapa fill:#101820,stroke:#C6A15B,stroke-width:1px,color:#E7E3D8
-  classDef parada fill:#C6A15B,stroke:#C6A15B,stroke-width:1px,color:#101820
-  class A,B,C,E,F etapa
-  class D parada
-  linkStyle default stroke:#C6A15B,stroke-width:1.5px
-```
-
-<p align="center"><sub>A cadeia para em <code>review</code>. Nada passa daí sem alguém clicar.</sub></p>
+<p align="center">
+  <img src=".github/assets/fluxo.svg" alt="nicho e cidade, descoberta e cruzamento, pontuação de encaixe, lista em review onde a cadeia para, seleção manual mais confirmação, envio pelo Gmail do próprio cliente" width="100%">
+</p>
 
 <br>
 

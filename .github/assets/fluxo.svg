@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="500" viewBox="0 0 880 500" role="img" aria-label="Fluxo do Argos: nicho e cidade, descoberta e cruzamento, pontuação de encaixe, lista em review onde a cadeia para, seleção manual e confirmação, envio pelo Gmail do próprio cliente.">
+  <defs>
+    <radialGradient id="wash" cx="50%" cy="0%" r="120%">
+      <stop offset="0" stop-color="#C6A15B" stop-opacity="0.07"/>
+      <stop offset="0.6" stop-color="#C6A15B" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="880" height="500" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="880" height="500" fill="#101820"/>
+    <rect width="880" height="500" fill="url(#wash)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="879" height="499" rx="12" fill="none" stroke="#C6A15B" stroke-opacity="0.22"/>
+
+  <!--
+    Espinha: uma linha so, de cima a baixo. O ponto de parada e o unico
+    preenchido, porque e a unica etapa que nao continua sozinha.
+  -->
+  <path d="M72 60V412" stroke="#C6A15B" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <g font-family="'Segoe UI','Inter',Helvetica,Arial,sans-serif">
+
+    <!-- 1 -->
+    <circle cx="72" cy="60" r="6" fill="none" stroke="#C6A15B" stroke-width="1.5"/>
+    <text x="112" y="56" font-size="17" font-weight="600" fill="#E7E3D8">nicho + cidade</text>
+    <text x="112" y="78" font-size="14" fill="#9A9384">o único dado que você digita</text>
+
+    <!-- 2 -->
+    <circle cx="72" cy="148" r="6" fill="none" stroke="#C6A15B" stroke-width="1.5"/>
+    <text x="112" y="144" font-size="17" font-weight="600" fill="#E7E3D8">descoberta e cruzamento</text>
+    <text x="112" y="166" font-size="14" fill="#9A9384">OpenStreetMap, cadastro de CNPJ da Receita Federal, Apify sob demanda</text>
+
+    <!-- 3 -->
+    <circle cx="72" cy="236" r="6" fill="none" stroke="#C6A15B" stroke-width="1.5"/>
+    <text x="112" y="232" font-size="17" font-weight="600" fill="#E7E3D8">pontuação de encaixe</text>
+    <text x="112" y="254" font-size="14" fill="#9A9384">Claude, GPT ou Gemini, atrás de um contrato só</text>
+
+    <!-- 4: a parada -->
+    <circle cx="72" cy="324" r="11" fill="#C6A15B"/>
+    <circle cx="72" cy="324" r="19" fill="none" stroke="#C6A15B" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="112" y="320" font-size="17" font-weight="600" fill="#C6A15B">lista em review</text>
+    <text x="112" y="342" font-size="14" fill="#C6A15B" fill-opacity="0.78">a cadeia para aqui, sempre. nada segue sozinho</text>
+
+    <!-- 5 -->
+    <circle cx="72" cy="412" r="6" fill="none" stroke="#C6A15B" stroke-width="1.5"/>
+    <text x="112" y="408" font-size="17" font-weight="600" fill="#E7E3D8">seleção manual mais confirmação</text>
+    <text x="112" y="430" font-size="14" fill="#9A9384">você escolhe quem recebe, e confirma antes de sair</text>
+
+    <!-- 6, fora da espinha: so acontece depois do clique -->
+    <path d="M72 412V452" stroke="#C6A15B" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 4"/>
+    <circle cx="72" cy="452" r="6" fill="none" stroke="#A8B8A4" stroke-opacity="0.7" stroke-width="1.5"/>
+    <text x="112" y="457" font-size="15" fill="#A8B8A4">envio pelo Gmail do próprio cliente</text>
+  </g>
+</svg>
