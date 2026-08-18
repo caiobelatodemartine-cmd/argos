@@ -14,6 +14,15 @@
   <sub>Esta é a vitrine pública do produto. O código-fonte é privado.</sub>
 </p>
 
+<p align="center">
+  <a href="#o-problema">O problema</a> &nbsp;·&nbsp;
+  <a href="#como-funciona">Como funciona</a> &nbsp;·&nbsp;
+  <a href="#três-decisões-que-definem-o-produto">Decisões</a> &nbsp;·&nbsp;
+  <a href="#arquitetura">Arquitetura</a> &nbsp;·&nbsp;
+  <a href="#segurança-e-privacidade">Segurança</a> &nbsp;·&nbsp;
+  <a href="#planos">Planos</a>
+</p>
+
 <br>
 
 ## O problema
@@ -94,6 +103,19 @@ O padrão que atravessa o repositório: **lógica pura no contrato, efeito colat
 main**. `tier.ts`, `license.ts` e `tenant.ts` não tocam disco nem rede, então rodam
 em vitest sem subir o Electron. É por isso que a suíte passa de 690 testes sem
 precisar abrir a aplicação.
+
+<br>
+
+## Em números
+
+<table>
+<tr>
+<td align="center"><strong>691</strong><br><sub>testes automatizados</sub></td>
+<td align="center"><strong>3</strong><br><sub>fontes de descoberta</sub></td>
+<td align="center"><strong>3</strong><br><sub>provedores de IA<br>atrás de um contrato</sub></td>
+<td align="center"><strong>0</strong><br><sub>dados de lead<br>na nuvem</sub></td>
+</tr>
+</table>
 
 <br>
 
