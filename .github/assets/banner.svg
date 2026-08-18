@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Argos. Prospeccao B2B local para Windows.">
+  <defs>
+    <!-- A UNICA lavagem: um matiz (ouro), alpha baixo, ancorada no topo. -->
+    <radialGradient id="wash" cx="50%" cy="0%" r="115%">
+      <stop offset="0" stop-color="#C6A15B" stop-opacity="0.10"/>
+      <stop offset="0.58" stop-color="#C6A15B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fio" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#C6A15B" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#C6A15B" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C6A15B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="quadro"><rect width="1280" height="360" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#quadro)">
+    <rect width="1280" height="360" fill="#101820"/>
+    <rect width="1280" height="360" fill="url(#wash)"/>
+
+    <!-- Grade de fundo: fio de cabelo, quase invisivel. Estrutura, nao decoracao. -->
+    <g stroke="#E7E3D8" stroke-opacity="0.035" stroke-width="1">
+      <path d="M0 90.5H1280M0 180.5H1280M0 270.5H1280"/>
+      <path d="M160.5 0V360M320.5 0V360M480.5 0V360M640.5 0V360M800.5 0V360M960.5 0V360M1120.5 0V360"/>
+    </g>
+
+    <!-- Radar, a direita, grande e cortado pela borda: o produto varrendo o mapa. -->
+    <g transform="translate(1010,180)" fill="none" stroke="#C6A15B" stroke-linecap="round">
+      <circle r="230" stroke-opacity="0.07" stroke-width="1"/>
+      <circle r="168" stroke-opacity="0.10" stroke-width="1"/>
+      <circle r="106" stroke-opacity="0.14" stroke-width="1"/>
+      <circle r="46"  stroke-opacity="0.20" stroke-width="1"/>
+      <path d="M-236 0H236M0 -236V236" stroke-opacity="0.07" stroke-width="1"/>
+      <!-- linha de varredura -->
+      <path d="M0 0L152 -152" stroke-opacity="0.65" stroke-width="2.5"/>
+      <circle r="4.5" fill="#C6A15B" stroke="none" fill-opacity="0.85"/>
+      <!-- empresas encontradas -->
+      <g stroke="none">
+        <circle cx="96"  cy="-118" r="5"   fill="#C6A15B" fill-opacity="0.9"/>
+        <circle cx="96"  cy="-118" r="13"  fill="none" stroke="#C6A15B" stroke-opacity="0.35" stroke-width="1.5"/>
+        <circle cx="-72" cy="64"   r="4"   fill="#A8B8A4" fill-opacity="0.55"/>
+        <circle cx="150" cy="52"   r="3.5" fill="#A8B8A4" fill-opacity="0.40"/>
+        <circle cx="18"  cy="-196" r="3"   fill="#A8B8A4" fill-opacity="0.30"/>
+        <circle cx="-142" cy="-88" r="3"   fill="#A8B8A4" fill-opacity="0.28"/>
+      </g>
+    </g>
+
+    <!-- Marca -->
+    <g transform="translate(96,96)">
+      <rect width="88" height="88" rx="22" fill="#C6A15B"/>
+      <rect width="88" height="88" rx="22" fill="url(#sheen)"/>
+      <g transform="translate(44,44) scale(2.41)" fill="none" stroke="#101820" stroke-linecap="round">
+        <circle r="8.5"  stroke-opacity="0.30" stroke-width="1.25"/>
+        <circle r="4.8"  stroke-opacity="0.22" stroke-width="1"/>
+        <path d="M0 -8.5V8.5M-8.5 0H8.5" stroke-opacity="0.16" stroke-width="0.75"/>
+        <path d="M0 0L7.8 -6.2" stroke-opacity="0.7" stroke-width="1.4"/>
+        <circle r="1.1" fill="#101820" fill-opacity="0.65" stroke="none"/>
+        <circle cx="4.4" cy="-3.6" r="2.6" stroke-opacity="0.38" stroke-width="0.9"/>
+        <circle cx="4.4" cy="-3.6" r="1.6" fill="#101820" fill-opacity="0.6" stroke="none"/>
+      </g>
+    </g>
+
+    <text x="212" y="152"
+          font-family="'Segoe UI Semibold','Segoe UI',Inter,Helvetica,Arial,sans-serif"
+          font-size="76" font-weight="600" letter-spacing="14" fill="#E7E3D8">ARGOS</text>
+
+    <rect x="212" y="176" width="436" height="1" fill="url(#fio)"/>
+
+    <text x="212" y="212"
+          font-family="'Segoe UI','Inter',Helvetica,Arial,sans-serif"
+          font-size="22" font-weight="400" fill="#C6A15B" letter-spacing="0.4">Prospeccao B2B local para Windows</text>
+
+    <text x="212" y="248"
+          font-family="'Segoe UI','Inter',Helvetica,Arial,sans-serif"
+          font-size="17" font-weight="400" fill="#9A9384" letter-spacing="0.2">Encontra empresas reais por nicho e cidade, cruza com o cadastro de CNPJ</text>
+    <text x="212" y="274"
+          font-family="'Segoe UI','Inter',Helvetica,Arial,sans-serif"
+          font-size="17" font-weight="400" fill="#9A9384" letter-spacing="0.2">da Receita Federal e monta listas prontas para contato.</text>
+
+    <!-- Fio inferior: fecha o quadro sem moldura. -->
+    <path d="M0 359.5H1280" stroke="#C6A15B" stroke-opacity="0.28" stroke-width="1"/>
+  </g>
+</svg>

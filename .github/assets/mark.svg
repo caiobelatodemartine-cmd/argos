@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ícone do app = espelho do BrandMark (apps/renderer/src/components/Brand.tsx)
+    e do favicon do site de vendas (~/argos-site/assets/favicon.svg):
+    squircle CHAPADO no ouro #C6A15B com o radar em tinta #101820.
+
+    A paleta violeta→menta foi descartada em 2026-08-16 junto com o site. O site
+    tem UM acento só, então o ícone não tem mais gradiente de dois matizes —
+    apenas o sheen branco de topo, que dá volume sem inventar cor.
+    Mantenha em sincronia com Brand.tsx e com o favicon do site.
+  -->
+  <defs>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- squircle da marca: ouro chapado -->
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="#C6A15B"/>
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#sheen)"/>
+
+  <!-- radar / scope glyph — tinta #101820 sobre ouro (24-unit design, escalado e centrado) -->
+  <g transform="translate(97.6,97.6) scale(13.2)" fill="none" stroke-linecap="round">
+    <!-- outer ring -->
+    <circle cx="12" cy="12" r="8.5" stroke="#101820" stroke-opacity="0.3" stroke-width="1.25"/>
+    <!-- mid ring -->
+    <circle cx="12" cy="12" r="4.8" stroke="#101820" stroke-opacity="0.22" stroke-width="1"/>
+    <!-- crosshair -->
+    <line x1="12" y1="3.5" x2="12" y2="20.5" stroke="#101820" stroke-opacity="0.16" stroke-width="0.75"/>
+    <line x1="3.5" y1="12" x2="20.5" y2="12" stroke="#101820" stroke-opacity="0.16" stroke-width="0.75"/>
+    <!-- sweep line -->
+    <line x1="12" y1="12" x2="19.8" y2="5.8" stroke="#101820" stroke-opacity="0.7" stroke-width="1.4"/>
+    <!-- center pip -->
+    <circle cx="12" cy="12" r="1.1" fill="#101820" fill-opacity="0.65"/>
+    <!-- detected blip -->
+    <circle cx="16.4" cy="8.4" r="2.6" stroke="#101820" stroke-opacity="0.38" stroke-width="0.9"/>
+    <circle cx="16.4" cy="8.4" r="1.6" fill="#101820" fill-opacity="0.6"/>
+  </g>
+</svg>
